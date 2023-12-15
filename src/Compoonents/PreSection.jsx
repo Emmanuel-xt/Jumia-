@@ -25,11 +25,11 @@ const PreSection = () => {
           <Items name={"Other Categories"} />
         </div>
         <div className="mid-menu">
-          <video autoPlay loop src={jslide} />
+          <video autoPlay loop src={jslide} className="mid-img"/>
         </div>
         <div className="right-menu">
-            <img src={rside1} />
-            <img src={rside2} />
+            <img src={rside1} className="right-img"/>
+            <img src={rside2} className="right-img"/>
 
         </div>
       </div>

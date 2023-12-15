@@ -9,9 +9,8 @@ const OffcialStore = () => {
                 <h2>Official Store</h2>
             </div>
 
-            <div className="image">
-                <img src={officialstore} alt="" />
-
+            <div className="official-image">
+                <img src={officialstore} alt="" className="official-image" />
             </div>
         </section>
         </>
