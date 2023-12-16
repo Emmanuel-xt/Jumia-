@@ -1,10 +1,10 @@
 import React from "react";
-import BagImage from '../jumiaMedia/Recommended/bag.jpg';
-import BootImage from '../jumiaMedia/Recommended/boot.jpg';
-import CroptopImage from '../jumiaMedia/Recommended/croptop.jpg';
-import EarphoneImage from '../jumiaMedia/Recommended/earphone.jpg';
-import FtimberImage from '../jumiaMedia/Recommended/ftimber.jpg';
-import WomenShoeImage from '../jumiaMedia/Recommended/womenShoe.jpg';
+import BagImage from "../jumiaMedia/Recommended/bag.jpg";
+import BootImage from "../jumiaMedia/Recommended/boot.jpg";
+import CroptopImage from "../jumiaMedia/Recommended/croptop.jpg";
+import EarphoneImage from "../jumiaMedia/Recommended/earphone.jpg";
+import FtimberImage from "../jumiaMedia/Recommended/ftimber.jpg";
+import WomenShoeImage from "../jumiaMedia/Recommended/womenShoe.jpg";
 
 const products = [
   {
@@ -86,33 +86,25 @@ const products = [
   },
 ];
 
-
-
-
 const Recommended = () => {
   return (
     <>
-    <section>
+      <section>
         <h3 className="title">Recommended For you </h3>
-    <div className="recommended-sec-con con ">
-        
-           { products.map((product , index) => (
-               <div className="recommended-sec-item itemes " key={index}>
-                    <div className="img-span" >
-                      <img src={product.img}  />
-                      <span>{product.discount}</span>
-                    </div>
-                    <p>{product.name}</p>
-                    <p className="price">&#8358; {product.price}</p>
-                    <strike>&#8358;{product.oldPrice}</strike>
-                    </div>
-                    
-                )
-            )}
-        
-
-    </div>
-    </section>
+        <div className="recommended-sec-con con ">
+          {products.map((product, index) => (
+            <div className="recommended-sec-item itemes " key={index}>
+              <div className="img-span">
+                <img src={product.img} />
+                <span>{product.discount}</span>
+              </div>
+              <p>{product.name}</p>
+              <p className="price">&#8358; {product.price}</p>
+              <strike>&#8358;{product.oldPrice}</strike>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };

@@ -33,7 +33,7 @@ body {
   margin: auto;
   height: 50px;
 }
-@media (max-width:973px) {
+@media (max-width: 973px) {
   .header-menu-bar {
     display: flex;
     flex-direction: row;
@@ -43,18 +43,17 @@ body {
     margin: auto;
     height: 50px;
   }
-  
 }
-@media (max-width:630px) {
-  .header-menu-bar{
+@media (max-width: 630px) {
+  .header-menu-bar {
     gap: 50px;
   }
 }
-@media (max-width:477px) {
-  .header-menu-bar{
+@media (max-width: 477px) {
+  .header-menu-bar {
     display: none;
   }
-  .search .button{
+  .search .button {
     display: none;
   }
 }
@@ -63,7 +62,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 13px;
 }
 .sell img {
@@ -73,19 +72,23 @@ body {
   font-size: 14px;
   color: orange;
 }
+@media (max-width: 655px) {
+  .sell p {
+    font-size: 10px;
+  }
+}
 .menus {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
-@media (max-width:627px) {
-  .menus{
+@media (max-width: 627px) {
+  .menus {
     font-size: 12px;
   }
-  .header-menu-bar{
-    gap: 10px
+  .header-menu-bar {
+    gap: 10px;
   }
 }
 .jlogo {
@@ -133,7 +136,6 @@ body {
   flex-direction: row;
   align-items: center;
   /* justify-content: space-between; */
-  
 }
 .search-bar {
   display: flex;
@@ -148,10 +150,10 @@ body {
   /* width: 520px; */
   /* margin-left: 60px; */
 }
-.search-input{
+.search-input {
   width: 100%;
 }
-.input-box{
+.input-box {
   width: 100%;
 }
 @media (max-width: 1258px) {
@@ -168,12 +170,11 @@ body {
   font-size: 20px;
   margin-right: 10px;
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .search-bar .search-icon {
     font-size: 16px;
     margin-right: 10px;
   }
-  
 }
 .search-bar input {
   font-size: 16px;
@@ -196,7 +197,7 @@ body {
   color: white;
   padding: 10px;
 }
-@media (max-width:1001px) {
+@media (max-width: 1001px) {
   .search .button {
     margin-left: 8px;
     border: none;
@@ -205,27 +206,29 @@ body {
     border-radius: 2px;
     color: white;
   }
-  
 }
-@media (max-width:575px) {
+@media (max-width: 575px) {
   .search .button {
     margin-left: 8px;
     font-size: 10px;
   }
-  
 }
-@media (max-width:410px) {
-  .search-bar{
+@media (max-width: 410px) {
+  .search-bar {
     width: 250px;
   }
 }
 .navs {
   display: flex;
 }
+.nav-none {
+  display: none;
+}
 .account {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 .account:hover {
   color: orangered;
@@ -240,16 +243,20 @@ body {
 .account p {
   font-size: 18px;
 }
-
-@media (max-width:875px) {
-  .navs{
+.toggler{
+  display: none;
+}
+@media (max-width: 875px) {
+  .toggler{
+    display: block;
+  }
+  .navs {
     flex-direction: column;
     position: absolute;
-    right: 13px;
-    top: 40px;
+    right: 10px;
+    top: 60px;
     background: white;
-    box-shadow: 1px 1px 10px rgba(104, 94, 94 , 0.4);
-
+    box-shadow: 1px 1px 10px rgba(104, 94, 94, 0.4);
   }
   .account {
     display: flex;
@@ -258,24 +265,22 @@ body {
     align-items: center;
     padding: 10px 20px;
   }
-  .account:hover{
+  .account:hover {
     background: rgb(172, 163, 163);
     color: aliceblue;
   }
-  .account:focus{
+  .account:focus {
     background: rgb(172, 163, 163);
     color: aliceblue;
   }
- 
 }
-@media (max-width:1099px) {
-  .account p{
+@media (max-width: 1099px) {
+  .account p {
     font-size: 15px;
   }
-  .account .account-icon{
+  .account .account-icon {
     font-size: 15px;
   }
-  
 }
 .help {
   display: flex;
@@ -283,18 +288,16 @@ body {
 
 /* PreSection Starts here */
 
-
 .presection-con {
   width: 88%;
   margin: auto;
+  padding: 20px;
 }
 .presection-sec {
   margin: 20px 0;
   display: flex;
   flex-direction: row;
-  justify-items: end;
-  display: no;
-  /* flex-wrap: wrap; */
+  width: 100%;
 }
 .side-menu {
   background-color: white;
@@ -306,19 +309,25 @@ body {
 
 @media (max-width: 1165px) {
   .side-menu {
-    padding-right: 10px;
+    /* padding-right: 10px; */
   }
 }
-@media (max-width:620px) {
-  .side-menu{
+@media (max-width: 740px) {
+  .side-menu {
     display: none;
+  }
+  .presection-sec {
+    align-items: center;
+    justify-content: center;
   }
 }
 .item {
   display: flex;
+  align-items: center;
   margin: 10px 0px;
   cursor: pointer;
   font-size: 13px;
+  gap: 3px;
 }
 @media (max-width: 1240px) {
   .item {
@@ -349,22 +358,27 @@ body {
   }
 }
 @media (max-width: 1000px) {
-  .right-img {
+  .right-menu {
     display: none;
+  }
+  .presection-sec {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* flex-wrap: wrap; */
   }
 }
 @media (max-width: 1320px) {
   .mid-menu {
-    width: 600px;
+    /* width: 600px; */
   }
 }
 @media (max-width: 1320px) {
   .mid-menu {
     width: 500px;
   }
-}
-.mid-menu {
-  width: 100opx;
 }
 .mid-img {
   width: 100%;
@@ -401,6 +415,20 @@ body {
 .sec {
   width: 88%;
   margin: auto;
+}
+@media (max-width: 655px) {
+  .first-sec-con {
+    gap: 6px;
+  }
+  .first-sec-item img {
+    width: 80px;
+  }
+  .first-sec-item p {
+    font-size: 14px;
+  }
+  .sec {
+    width: 97%;
+  }
 }
 
 /* recommended section starts here */
@@ -444,6 +472,15 @@ body {
   font-weight: lighter;
   font-size: smaller;
 }
+@media (max-width: 655px) {
+  .recommended-sec-item img {
+    width: 130px;
+  }
+  .sec {
+    width: 97%;
+  }
+}
+/* ----------------------------- */
 .itemes:hover {
   transform: scale(1.02);
   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
@@ -507,8 +544,8 @@ body {
   width: 88%;
   margin: auto;
 }
-@media (max-width:725px) {
-  .penultimate_sec{
+@media (max-width: 725px) {
+  .penultimate_sec {
     flex-direction: column;
     gap: 20px;
   }
@@ -604,8 +641,8 @@ button.gender {
   flex-direction: row;
   gap: 100px;
 }
-@media (max-width:979px) {
-  .sub_ultimate{
+@media (max-width: 979px) {
+  .sub_ultimate {
     flex-direction: column;
   }
 }
@@ -653,9 +690,16 @@ hr.a1 {
   justify-content: space-evenly;
   padding-top: 20px;
   color: white;
+  gap: 20px;
 }
-@media (max-width:350px) {
-  .footer{
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+@media (max-width: 350px) {
+  .footer {
     font-size: 10px;
   }
 }

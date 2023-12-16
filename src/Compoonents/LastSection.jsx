@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPersonWalkingLuggage } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaPersonWalkingLuggage, FaTwitter, FaYoutube } from "react-icons/fa6";
 import { LuPartyPopper } from "react-icons/lu";
 import { PiBowlFoodBold } from "react-icons/pi";
 import { FaCcAmazonPay } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { FaMaxcdn } from "react-icons/fa";
 import { FaRegCreditCard } from "react-icons/fa";
 import { FaCcMastercard } from "react-icons/fa";
 import { LiaCcVisa } from "react-icons/lia";
+import { LiaDhl } from "react-icons/lia";
 const LastSection = () => {
   return (
     <>
@@ -57,23 +58,21 @@ const LastSection = () => {
         <div className="ultimate2">
           <div className="u2">
             <p className="p1">JOIN US ON</p>
-            <section>
-              <i className="fa-brands fa-facebook-f sec1" />
-              <i className="fa-brands fa-youtube sec1" />
-              <i className="fa-brands fa-instagram sec1" />
-              <i className="fa-brands fa-twitter sec1" />
+            <section className="footer-icons">
+              <FaFacebook />
+              <FaYoutube />
+              <FaInstagram />
+              <FaTwitter />
             </section>
           </div>
           <div className="u2">
             <p className="p1">PAYMENT METHODS &amp; DELIVERY PARTNERS</p>
-            <section>
-              <FaRegCreditCard /> <FaCcMastercard />
-              <LiaCcVisa />              <i
-                className="fa-brands fa-dhl fa-2xl"
-                style={{ color: "#f0f2f5" }}
-              />
+            <section className="footer-icons">
+              <FaRegCreditCard />
+              <FaCcMastercard />
+              <LiaCcVisa />
+              <LiaDhl />
               <FaMaxcdn />
-              
             </section>
           </div>
         </div>
@@ -84,7 +83,7 @@ const LastSection = () => {
           </div>
           <div className="services">
             <PiBowlFoodBold />
-            <p>Celebrations</p>{" "}
+            <p>CELEBRATIONS</p>{" "}
           </div>
           <div className="services">
             <LuPartyPopper /> <p>PARTY</p>

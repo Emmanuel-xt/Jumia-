@@ -18,7 +18,7 @@ const products = [
       img: Artboard1Copy5Image,
     },
     {
-      name: "Your Utility SHop",
+      name: "Utility SHop",
       img: Artboard1Image,
     },
     {
@@ -26,7 +26,7 @@ const products = [
       img: JumiaPayImage,
     },
     {
-      name: "Best Deals on Drinks",
+      name: "Deals on Drinks",
       img: MobileTripleBannerImage,
     },
     {

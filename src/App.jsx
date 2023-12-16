@@ -39,7 +39,7 @@ const App = () => {
       <div className="profile-menu-sec">
         <ProfileMenu />
       </div>
-      <div className="presection-sec">
+      <div className="presection-sec1">
         <PreSection />
       </div>
       <div className="firstsection-sec">
